@@ -1,0 +1,36 @@
+<div class="flex min-h-full flex-col justify-center px-6 p-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img class="mx-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/128/9099/9099135.png"
+            alt="Your Company">
+        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Se connecter
+        </h2>
+    </div>
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" [formGroup]="UserForm">
+            <div>
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Adresse Email</label>
+                <div class="mt-2">
+                    <input id="email" formControlName="email" type="email" required
+                        class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-300 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Mot De Passe</label>
+                <div class="mt-2">
+                    <input id="password" formControlName="password" type="password" required
+                        class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-300 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" (click)="login()"
+                    class="flex w-full justify-center uppercase rounded-md px-3 p-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+                    style="background-color: #bdb3ff;">Se connecter</button>
+                <button routerLink="/sign_up"
+                    class="flex my-5 w-full justify-center uppercase rounded-md px-3 p-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+                    style="background-color: #efc3ff;">créer un compte</button>
+            </div>
+        </form>
+    </div>
+</div>
