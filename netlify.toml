@@ -1,9 +1,6 @@
 [build]
-  publish = "client/dist/index.html"
-  publish = "api/dist/main.ts"
-  command = "npm run build"
-  command = "nest build"
-
+  command = "npm run build:all"
+  publish = "client/dist/your-project-name"
 
 [[redirects]]
   from = "/*"

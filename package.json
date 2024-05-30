@@ -1,0 +1,12 @@
+{
+    "name": "fullstack-project",
+    "version": "0.0.1",
+    "scripts": {
+      "build:client": "cd client && npm install && npm run build",
+      "build:server": "cd server && npm install && npm run build",
+      "build:all": "npm run build:client && npm run build:server"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }
+  
